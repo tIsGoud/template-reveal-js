@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Reveal.js template</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/kpn-light.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Style used for verticator plugin -->
+	<link rel="stylesheet" href="css/verticator.css">
+
+	<!-- Printing and PDF exports (http://localhost:8000/?print-pdf#/)-->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<ul class="verticator">
+		</ul>
+		<div class="slides">
+			<!-- Load your external MarkDown file -->
+			<section data-markdown="slides.md"
+				data-separator="^\r?\n---\r?\n$"
+				data-separator-vertical="^\r?\n--\r?\n$"
+				data-separator-notes="^Note:"
+				data-charset="iso-8859-15">
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: true,
+			controlsTutorial: false,
+			progress: true,
+			hash: true,
+			history: false,
+			center: false, // Vertical centering of slides
+			touch: true,
+			slideNumber: false,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transitionSpeed: 'slow',
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			pdfSeparateFragments: 'false',
+			pdfMaxPagesPerSlide: 1,
+			verticator: { // set it to the linkcolor of the theme
+				//color: '#8b743d' // beige, dg-light
+				//color: '#42affa' // black
+				//color: '#a23' // blood
+				color: '#00aaff' // kpn-dark, kpn-light
+				//color: '#13DAEC' // league, dg-dark
+				//color: '#268bd2' // moon, solarized
+				//color: '#e7ad52' // night
+				//color: '#51483D' // serif
+				//color: '#00008B' // simple
+				//color: '#3b759e' // sky
+				//color: '#2a76dd' // white
+			},
+			menu: {
+				// https://github.com/denehyg/reveal.js-menu
+				side: 'left',
+				width: 'normal',
+				numbers: true,
+				titleSelector: 'h1, h2, h3, h4, h5, h6',
+				useTextContentForMissingTitles: true,
+				hideMissingTitles: false,
+				markers: true,
+				custom: [
+					{ title: 'Links', icon: '<i class="fa fa-link">', src: 'menu-links.html' },
+					{ title: 'Info', icon: '<i class="fa fa-info">', src: 'menu-info.html' }
+				],
+				themes: [
+					{ name: 'Black', theme: 'css/theme/black.css' },
+					{ name: 'White', theme: 'css/theme/white.css' },
+					{ name: 'League', theme: 'css/theme/league.css' },
+					{ name: 'Beige', theme: 'css/theme/beige.css' },
+					{ name: 'Sky', theme: 'css/theme/sky.css' },
+					{ name: 'Night', theme: 'css/theme/night.css' },
+					{ name: 'Serif', theme: 'css/theme/serif.css' },
+					{ name: 'Simple', theme: 'css/theme/simple.css' },
+					{ name: 'Solarized', theme: 'css/theme/solarized.css' },
+					{ name: 'KPN Light', theme: 'css/theme/kpn-light.css' },
+					{ name: 'KPN Dark', theme: 'css/theme/kpn-dark.css' },
+					{ name: 'DomoticaGrunn Light', theme: 'css/theme/dg-light.css' },
+					{ name: 'DomoticaGrunn Dark', theme: 'css/theme/dg-dark.css' }
+				],
+				themesPath: 'css/theme',
+				transitions: true,
+				openButton: false,
+				openSlideNumber: false,
+				keyboard: true,
+				sticky: false,
+				autoOpen: true,
+				delayInit: false,
+				openOnInit: false,
+				loadIcons: true
+			},
+
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true }, // [s]
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/verticator/verticator.js' }, // https://github.com/Martinomagnifico/reveal.js-verticator
+				//{ src: 'plugin/spotlight/spotlight.js' },
+				{ src: 'plugin/menu/menu.js' }, // [m]
+				{ src: 'plugin/search/search.js', async: true }, // [ctrl]-[shift]-[f]
+			]
+		});
+	</script>
+</body>
+
+</html>
