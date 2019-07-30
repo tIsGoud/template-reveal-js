@@ -41,4 +41,30 @@ Images used in the slides are placed in the directory 'images'.
 
 Custom themes with logos for KPN and DomoticaGrunn.
 
-Images used in these themes are placed in the directory 'css>theme>images'.
+Images used in these themes are stored in the directory 'css>theme>images'.
+
+Default theme is kpn-light and is set in 'index.html'.
+
+### KPN-light
+
+![KPN-light](images/KPN-light-small.png)
+
+css/theme/kpn-light.css
+
+### KPN-dark
+
+![KPN-dark](images/KPN-dark-small.png)
+
+css/theme/dg-dark.css
+
+### DomoticaGrunn-light
+
+![DG-light](images/DG-light-small.png)
+
+css/theme/dg-light.css
+
+### DomoticaGrunn-dark
+
+![DG-dark](images/DG-dark-small.png)
+
+css/theme/dg-dark.css
