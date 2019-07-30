@@ -23,7 +23,7 @@ Reveal.js template with menu- and verticator plugin and customised themes
 - menu-links.html:
   - links to the subjects from the presentation
 - menu is activated with 'm'
-- swap theme live
+- on-the-fly swapping themes
 
 ## Vertical slide indicator
 

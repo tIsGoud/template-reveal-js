@@ -28,7 +28,7 @@
 - menu-links.html:
   - links to the subjects from the presentation
 - menu is activated with 'm'
-- swap theme live
+- on-the-fly swapping themes
 
 ---
 
@@ -68,6 +68,26 @@ Images used in the slides are placed in the directory 'images'.
 Custom themes with logos for KPN and DomoticaGrunn.
 
 Images used in these themes are placed in the directory 'css>theme>images'.
+
+--
+
+<!-- .slide: data-menu-title="Theme KPN-light" -->
+## Theme KPN-light
+
+--
+
+<!-- .slide: data-menu-title="Theme KPN-dark" -->
+## Theme KPN-dark
+
+--
+
+<!-- .slide: data-menu-title="Theme DomoticaGrunn-light" -->
+## Theme DomoticaGrunn-light
+
+--
+
+<!-- .slide: data-menu-title="Theme DomoticaGrunn-dark" -->
+## Theme DomoticaGrunn-dark
 
 ---
 
