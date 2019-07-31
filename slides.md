@@ -133,7 +133,7 @@ css/theme/dg-dark.css
 
 Images are displayed without borders or shadow
 
-![](images/surftocat.png)
+![Surftocat](images/surftocat.png)
 
 ---
 
